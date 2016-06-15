@@ -1,0 +1,20 @@
+.social-stats {
+	display: flex;
+	flex-direction: column;
+}
+.facebook-stats,.twitter-stats,.googleplus-stats {
+	width:100%;
+	border: 1px solid black;
+	margin-top: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	align-content: space-around;
+}
+.social-stats img {
+	height: $social-stats;
+	width: $social-stats;
+}
+.social-stats img, .headline {
+	padding: $social-stats-padding;
+}

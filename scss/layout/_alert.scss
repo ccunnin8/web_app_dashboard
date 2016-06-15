@@ -1,0 +1,16 @@
+.alertbox {
+	width: $alert-box-width;
+	background-color: $darker-grey-blue;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: white;
+	margin-bottom: $alert-box-bottom;
+}
+.x {
+	margin-right: 5px;
+}
+.message {
+	margin-left: 5px;
+}

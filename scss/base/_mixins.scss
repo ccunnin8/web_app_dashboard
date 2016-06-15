@@ -1,0 +1,14 @@
+@mixin content-middle {
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+@mixin search-icon {
+	font-family: fontAwesome; content:'\f002  '; float: right;
+}
+@mixin search-bar {
+	&::-webkit-input-placeholder::before { @include search-icon }
+	&::-moz-placeholder::before  { @include search-icon }
+	&:-ms-input-placeholder::before  { @include search-icon }
+	input:-moz-placeholder::before  { @include search-icon }
+}

@@ -1,0 +1,20 @@
+#traffic {
+	height: $graph-mobile-height;
+	width: $graph-mobile-width;
+	margin: 0 auto;
+	display: block;
+	margin-bottom:5px;
+	border: 1px solid black;
+}
+#dailytraffic {
+	@extend #traffic;
+}
+
+#mobileusers {
+	@extend #traffic;
+}
+.graph-toggle {
+	width: $graph-toggle-mobile;
+	margin: 0 auto;
+	margin-bottom: $toggle-bottom;
+}

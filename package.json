@@ -1,0 +1,25 @@
+{
+  "name": "web_app_dashboard",
+  "version": "1.0.0",
+  "description": "Web App Dashboard for Treehouse",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ccunnin8/web_app_dashboard.git"
+  },
+  "keywords": [
+    "dashboard"
+  ],
+  "author": "Corey Cunningham",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ccunnin8/web_app_dashboard/issues"
+  },
+  "homepage": "https://github.com/ccunnin8/web_app_dashboard#readme",
+  "dependencies": {
+    "css-toggle-switch": "^4.0.2"
+  }
+}

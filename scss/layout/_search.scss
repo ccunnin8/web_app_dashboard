@@ -1,0 +1,12 @@
+.searchbar {
+	width: $searchbar-width;;
+	margin: 0 auto;
+	display: block;
+	@include search-bar;
+}
+.search h1 {
+	text-align: center;
+}
+.search {
+	margin-bottom: $search-bottom;
+}

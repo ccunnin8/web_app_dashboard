@@ -1,0 +1,16 @@
+nav {
+	background: $grey-blue;
+	display: flex;
+	@include content-middle;
+}
+ul {
+	margin: 0;
+	list-style: none;
+	text-align: center;
+	display: block;
+	line-height: $nav-line-height;
+}
+ul img {
+	height: $icon-mobile;
+	width: $icon-mobile;
+}

@@ -1,0 +1,153 @@
+<!doctype HTML>
+<html>
+<head>
+	<title>Web Dashboard</title>
+	<link type="text/css" rel="stylesheet" href="css/normalize.css">
+	<link type="text/css" rel="stylesheet" href="css/toggle-switch.css">
+	<link type="text/css" rel="stylesheet" href="css/application.css">
+</head>
+<body>
+	<nav>
+		<ul>
+			<li><bold>Your</bold>App</li>
+			<li><img class="bell" src="icons/icon-bell.svg"></li>
+			<li><div class="mockPic"></div> Josh Sullivan</li>
+		</ul>
+	</nav>
+	<div clas="container">
+		<div class="sidebar"></div>
+		<div class="main">
+			<section class="search">
+				<h1>Dashboard</h1>
+				<input type="text" placeholder="Search" class="searchbar">
+			</section>
+			<section class="alert">
+				<div class="alertbox">
+					<p class="message">This is a message to let you know that you have an alert and to close this you would click the x on the side</p>
+					<p class="x">x</p>
+				</div>
+			</section>
+			<section class="traffic">
+				  <div class="switch-toggle switch-candy graph-toggle">
+				    <input id="week" name="view" type="radio" checked>
+				    <label for="week" onclick="">Week</label>
+
+				    <input id="month" name="view" type="radio">
+				    <label for="month" onclick="">Month</label>
+
+				    <input id="day" name="view" type="radio">
+				    <label for="day" onclick="">Day</label>
+
+    				<a></a>
+  					</div>
+  				<h2>Traffic</h2>
+				<canvas id="traffic"></canvas>
+			</section>
+			<section class="two-column">
+				<h2>Daily Traffic</h2>
+				<canvas id="dailytraffic"></canvas>
+				<h2>Mobile Users</h2>
+				<canvas id="mobileusers"></canvas>
+			</section>
+			<section class="social-stats">
+				<h2>Social Stats</h2>
+				<div class="twitter-stats">
+					<img class="bell" src="icons/icon-twitter.svg">
+					<div class="headline">
+						<h3>Twitter</h3>
+						<h2>10,345</h2>
+					</div>
+				</div>
+				<div class="facebook-stats">
+						<img class="bell" src="icons/icon-facebook.svg">
+					<div class="headline">
+						<h3>Facebook</h3>
+						<h2>8,739</h2>
+					</div>
+				</div>
+				<div class="googleplus-stats">
+						<img class="bell" src="icons/icon-google-plus.svg">
+					<div class="headline">
+						<h3>Google+</h3>
+						<h2>2,530</h2>
+					</div>
+				</div>
+			</section>
+			<section class="two-column">
+				<div class="newmembers">
+					<h2>New Members</h2>
+					<div class="member">
+						<img class="head" src="icons/girlface.jpg">
+						<div class="group">
+							<p class="name">Victoria Chambers</p>
+							<a class="email" href="#">victoria.chambers80@example.com</a>
+						</div>
+						<p class="date">10/15/15</p>
+					</div>
+					<div class="member">
+						<img class="head" src="icons/128.jpg">
+						<div class="group">
+							<p class="name">Dale Byrd</p>
+							<a class="email" href="#">dale.byrd52@example.com</a>
+						</div>
+						<p class="date">10/15/15</p>
+					</div>
+					<div class="member">
+						<img class="head" src="icons/dawnface.jpg">
+						<div class="group">
+							<p class="name">Dawn Wood</p>
+							<a class="email" href="#">dawn.wood16@example.com</a>
+						</div>
+						<p class="date">10/15/15</p>
+					</div>
+					<div class="member">
+						<img class="head" src="icons/daleface.jpg">
+						<div class="group">
+							<p class="name">Dan Olivers</p>
+							<a class="email" href="#">dan.oliver82@example.com</a>
+						</div>
+						<p class="date">10/15/15</p>
+				</div>
+				<div class="recent-activty">
+					<h2>Recent Activity</h2>
+					<div class="member">
+						<img class="head" src="icons/girlface.jpg">
+						<div class="group">
+							<p class="message">Victoria Chambers comment on YourApp's SEO Tips</p>
+							<p class="time"> 4 hours ago</p>
+						</div>
+						<i class="fa fa-chevron-right" aria-hidden="true"></i>
+					</div>
+					<div class="member">
+						<img class="head" src="icons/128.jpg">
+						<div class="group">
+							<p class="message">Dale Byrd liked the post Facebook's Changes for 2016</p>
+							<p class="time"> 5 hours ago</p>
+						</div>
+							<i class="fa fa-chevron-right" aria-hidden="true"></i>
+					</div>
+					<div class="member">
+						<img class="head" src="icons/dawnface.jpg">
+						<div class="group">
+							<p class="message">Dawn Wood commented on Facebook's Changes for 2016</p>
+							<p class="time"> 5 hours ago</p>
+						</div>
+							<i class="fa fa-chevron-right" aria-hidden="true"></i>
+					</div>
+					<div class="member">
+						<img class="head" src="icons/daleface.jpg">
+						<div class="group">
+							<p class="message">Dan Oliver posted YourApp's SEO Tips</p>
+							<p class="time"> 1 day ago</p>
+						</div>
+							<i class="fa fa-chevron-right" aria-hidden="true"></i>
+				</div>
+				</div>
+			</section>
+		</div>
+	</div>
+	<script   src="https://code.jquery.com/jquery-3.0.0.min.js"   integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0="   crossorigin="anonymous"></script>  
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.5/Chart.bundle.js"></script>
+	<script src="javascript/main.js"></script>
+</body>
+</html>
