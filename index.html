@@ -9,13 +9,15 @@
 <body>
 	<nav>
 		<ul>
-			<li><bold>Your</bold>App</li>
+			<li class="brand"><bold>Your</bold>App</li>
 			<li><img class="bell" src="icons/icon-bell.svg"></li>
 			<li><div class="mockPic"></div> Josh Sullivan</li>
 		</ul>
 	</nav>
-	<div clas="container">
-		<div class="sidebar"></div>
+	<div class="container">
+		<div class="sidebar">
+			hello
+		</div>
 		<div class="main">
 			<section class="search">
 				<h1>Dashboard</h1>
@@ -44,13 +46,18 @@
 				<canvas id="traffic"></canvas>
 			</section>
 			<section class="two-column">
-				<h2>Daily Traffic</h2>
-				<canvas id="dailytraffic"></canvas>
-				<h2>Mobile Users</h2>
-				<canvas id="mobileusers"></canvas>
+				<div class="graph">
+					<h2>Daily Traffic</h2>
+					<canvas id="dailytraffic"></canvas>
+				</div>
+				<div class="graph">
+					<h2>Mobile Users</h2>
+					<canvas id="mobileusers"></canvas>
+				</div>
 			</section>
-			<section class="social-stats">
+			<section>
 				<h2>Social Stats</h2>
+				<div class="social-stats">
 				<div class="twitter-stats">
 					<img class="bell" src="icons/icon-twitter.svg">
 					<div class="headline">
@@ -72,6 +79,7 @@
 						<h2>2,530</h2>
 					</div>
 				</div>
+			</div>
 			</section>
 			<section class="two-column">
 				<div class="newmembers">
@@ -107,8 +115,9 @@
 							<a class="email" href="#">dan.oliver82@example.com</a>
 						</div>
 						<p class="date">10/15/15</p>
-				</div>
-				<div class="recent-activty">
+					</div>
+			</div>
+				<div class="recent-activity">
 					<h2>Recent Activity</h2>
 					<div class="member">
 						<img class="head" src="icons/girlface.jpg">
@@ -141,11 +150,61 @@
 							<p class="time"> 1 day ago</p>
 						</div>
 							<i class="fa fa-chevron-right" aria-hidden="true"></i>
-				</div>
+					</div>
 				</div>
 			</section>
+			<section class="two-column">
+				<div class="message-user">
+					<h2>Message User</h2>
+					<form action="#" method="post">
+						<input placeholder="Search for User" type="text"></input>
+						<textarea placeholder="Message for User"></textarea>
+						<button class="send">Send</button>
+					</form>
+				</div>
+				<div class="settings">
+					<h2>Settings</h2>
+					<div class="group">
+						<p>Send Email Notifcations</p>
+						<label class="switch-light switch-ios" onclick="">
+  						<input type="checkbox">
+						  <span>
+						    <span>Off</span>
+						    <span>On</span>
+						    <a></a>
+						  </span>
+						</label>
+					</div>
+					<div class="group">
+					<p>Set Profile To Public</p>
+						<label class="switch-light switch-ios" onclick="">
+  						<input type="checkbox">
+						  <span>
+						    <span>Off</span>
+						    <span>On</span>
+						    <a></a>
+						  </span>
+					</label>
+				</div>
+					<div class="styled-select">
+						<select name='timezone' class='timezone'>
+						<option value=" disabled selected"> Select Time Zone</option>
+						<option> Eastern Standard</option>
+						<option> Mountain Time</option>
+						<option> Midwest</option>
+						<option> California/Oregon/Washington</option>
+						</select>
+					</div>
+					<div class="button-grouping">
+						<button class="save">Save</button>
+						<button class="cancel">Cancel</button>
+					</div>
+				</div>
+			</section>
+			<footer></footer>
 		</div>
 	</div>
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 	<script   src="https://code.jquery.com/jquery-3.0.0.min.js"   integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0="   crossorigin="anonymous"></script>  
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.5/Chart.bundle.js"></script>
 	<script src="javascript/main.js"></script>

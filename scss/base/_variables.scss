@@ -35,3 +35,26 @@ $graph-mobile-height: 400px;
 /**social stats image size***/
 $social-stats: 40px;
 $social-stats-padding: 50px;
+
+//**media break points***//
+$tablet: '(min-width:760px)';
+$desktop: '(min-width: 1090px)';
+
+/*****TABLET SIZES ******/
+
+/**padding***/
+$list-item-padding: 10px;
+$social-stats-padding-tablet: 15px;
+
+/**width**/
+$toggle-tablet-width: 30%;
+$social-stats-tablet-width: 30%;
+
+//**heights****/
+$graph-tablet-height: 250px;
+
+//*******DESKTOP**********/////
+$sidebar: 10%;
+$main-content-desktop: 87%;
+
+

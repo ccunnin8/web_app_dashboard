@@ -2,15 +2,37 @@ nav {
 	background: $grey-blue;
 	display: flex;
 	@include content-middle;
+	@include tablet {
+		justify-content: flex-start;
+		align-items: flex-start;
+
+	}
 }
 ul {
 	margin: 0;
 	list-style: none;
 	text-align: center;
 	display: block;
+	padding: 0;
 	line-height: $nav-line-height;
+	@include tablet {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		width: 100%;
+	}
 }
 ul img {
 	height: $icon-mobile;
 	width: $icon-mobile;
+}
+.brand {
+	@include tablet {
+		margin-right: auto;
+	}
+}
+li {
+	@include tablet {
+		padding: $list-item-padding;
+	}
 }

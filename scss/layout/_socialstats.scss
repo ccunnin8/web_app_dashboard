@@ -1,6 +1,10 @@
 .social-stats {
 	display: flex;
 	flex-direction: column;
+	@include tablet {
+		flex-direction: row;
+		justify-content: space-around;
+	}
 }
 .facebook-stats,.twitter-stats,.googleplus-stats {
 	width:100%;
@@ -9,7 +13,9 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	align-content: space-around;
+	@include tablet {
+		width: $social-stats-tablet-width;
+	}
 }
 .social-stats img {
 	height: $social-stats;
@@ -17,4 +23,7 @@
 }
 .social-stats img, .headline {
 	padding: $social-stats-padding;
+	@include tablet {
+		padding: $social-stats-padding-tablet;
+	}
 }

@@ -1,20 +1,38 @@
-#traffic {
+#traffic, #dailytraffic, #mobileusers {
 	height: $graph-mobile-height;
 	width: $graph-mobile-width;
 	margin: 0 auto;
 	display: block;
 	margin-bottom:5px;
-	border: 1px solid black;
-}
-#dailytraffic {
-	@extend #traffic;
+	@include tablet {
+		height: 400px !important;
+	}
 }
 
-#mobileusers {
-	@extend #traffic;
-}
 .graph-toggle {
 	width: $graph-toggle-mobile;
 	margin: 0 auto;
 	margin-bottom: $toggle-bottom;
+	@include tablet {
+		width: $toggle-tablet-width;
+		float: right;
+	}
+}
+
+.traffic {
+	border-bottom: 3px solid lightgrey;
+}
+.two-column {
+	@include tablet {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		align-items: stretch;
+		border-bottom: 3px solid lightgrey;
+	}
+}
+.two-column .graph {
+	@include tablet {
+		width: 45%;
+	}
 }

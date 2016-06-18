@@ -1,4 +1,13 @@
  .main {
  	width: $main-width-mobile;
  	margin: 0 auto;
+ 	@include desktop {
+ 		width: $main-content-desktop;
+ 		margin: 0 auto;
+ 	}
+ }
+ .container {
+ 	@include desktop {
+ 		display: flex;
+ 	}
  }

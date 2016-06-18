@@ -12,3 +12,13 @@
 	&:-ms-input-placeholder::before  { @include search-icon }
 	input:-moz-placeholder::before  { @include search-icon }
 }
+@mixin tablet {
+	@media #{$tablet} {
+		@content;
+	}
+}
+@mixin desktop {
+	@media #{$desktop} {
+		@content;
+	}
+}

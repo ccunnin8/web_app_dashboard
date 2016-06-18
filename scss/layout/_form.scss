@@ -1,0 +1,64 @@
+input, textarea {
+	width: 99%;
+	margin-bottom: 10px;
+	font-size: 2em;
+}
+textarea {
+	height: 200px;
+}
+button {
+	height: 50px;
+	background-color: $darker-grey-blue;
+	color: white;
+	border: none;
+}
+.send {
+	width: 100%;
+}
+.settings .group {
+	width: 80%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+}
+.group p {
+	margin-right: auto;
+}
+select {
+	display: block;
+	width: 100%;
+	font-size: 1.25rem;
+	height: 40px;
+	padding: 5px;
+	-webkit-appearance: none;
+	-moz-apeearance:none;
+	background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) no-repeat right;
+	background-position-x: 97%;
+	margin-bottom: 10px;
+}
+
+.settings button {
+	width: 45%;
+	margin: 0 auto;
+}
+.settings {
+	text-align: center;
+}
+.settings h2 {
+	text-align: left;
+}
+.cancel {
+	background-color: lightgrey;
+}
+.message-user, .settings {
+	@include tablet {
+		width: 45%;
+	}
+}
+.settings {
+	@include tablet {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+}

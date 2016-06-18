@@ -4,8 +4,11 @@
 	margin-bottom: 5px;
 	padding-bottom: 6px;
 	border-bottom: 1px solid grey;
+	@include tablet {
+		height: 93px;
+	}
 }
-.newmembers img {
+.member img {
 	height: 50px;
 	width: 50px;
 	border-radius: 50%;
@@ -17,4 +20,16 @@
 i {
 	margin-left: auto;
 	font-size: 2em;
+}
+.switch-light {
+	width: 30%;
+}
+.time {
+	margin: 0;
+}
+.newmembers, .recent-activity {
+	@include tablet {
+		width: 49%;
+		font-size: 1rem;
+	}
 }

@@ -19,6 +19,7 @@ var weekly = new Chart(traffic,{
 	data: weeklydata,
 	options: {
 		responsive: true,
+		maintainAspectRatio: true,
 		legend: {
 			display: false
 		}
@@ -39,6 +40,11 @@ var barChart = new Chart(dailyTraffic, {
 	type: 'bar',
 	data: bardata,
 	options: {
+		responsive: true,
+		maintainAspectRatio: true,
+		legend: {
+			display: false
+		},
 		scales: {
 			yAxes: [{
 				ticks: {
@@ -66,7 +72,11 @@ var mobileUsers = new Chart(pieChart,{
 	type: 'pie',
 	data: mobileUsersData,
 	options: {
-		cutoutPercentage: 50
+		cutoutPercentage: 50,
+		legend: {
+			display: true
+		},
+		responsive: true,
 	}
 });
 
