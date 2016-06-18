@@ -2,11 +2,6 @@ nav {
 	background: $grey-blue;
 	display: flex;
 	@include content-middle;
-	@include tablet {
-		justify-content: flex-start;
-		align-items: flex-start;
-
-	}
 }
 ul {
 	margin: 0;
@@ -17,22 +12,38 @@ ul {
 	line-height: $nav-line-height;
 	@include tablet {
 		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
 		width: 100%;
+		padding: 5px 0;
 	}
 }
-ul img {
+nav svg {
 	height: $icon-mobile;
 	width: $icon-mobile;
+	@include tablet {
+		height: $icon-tablet;
+		width: $icon-tablet;
+		margin-top: 12px;
+	}
 }
 .brand {
 	@include tablet {
 		margin-right: auto;
 	}
+	color:white;
+	span {
+		color: lightgrey;
+	}
 }
 li {
 	@include tablet {
 		padding: $list-item-padding;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 0 10px;
+	}
+}li:last-child {
+	@include tablet {
+		border-left: 1px solid black;
 	}
 }

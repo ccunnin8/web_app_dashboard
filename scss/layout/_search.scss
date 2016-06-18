@@ -16,12 +16,33 @@
 		font-size: 1.25rem;
 		margin: 0;
 	}
+	@include desktop {
+		margin-left: 20px;
+	}
 }
 .search {
 	margin-bottom: $search-bottom;
+	border: none;
 	@include tablet {
 		display: flex;
 		height: 75px;
 		align-items: center;
+	}
+	@include desktop {
+		justify-content: space-between;
+		margin-bottom: 25px;
+	}
+}
+.search div {
+	padding-left: auto;
+	padding-right: 15px;
+	width: 85%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	@include desktop {
+		background-color: $search-bar-color;
+		border: 1px solid lightgrey;
+		border-top: none;
 	}
 }

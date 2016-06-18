@@ -1,0 +1,21 @@
+section {
+	@include tablet {
+		border-bottom: 3px solid lightgrey;
+	}
+}
+.two-column {
+	@include tablet {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content:center;
+	}
+}
+.two-column > div {
+	@include tablet {
+		width: 45%;
+		padding: 10px;
+	}
+}
+.two-column div:first-child {
+	border-right: 4px solid lightgray;
+}

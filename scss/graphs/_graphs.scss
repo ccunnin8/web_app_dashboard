@@ -22,17 +22,13 @@
 .traffic {
 	border-bottom: 3px solid lightgrey;
 }
-.two-column {
-	@include tablet {
-		display: flex;
-		justify-content: space-between;
-		flex-wrap: wrap;
-		align-items: stretch;
-		border-bottom: 3px solid lightgrey;
-	}
+.traffic div:first-child {
+	margin-right: 20px;
 }
-.two-column .graph {
-	@include tablet {
-		width: 45%;
-	}
+.traffic h2 {
+	margin-left: 20px;
+}
+.switch-ios.switch-toggle {
+	background-color: white;
+	box-shadow: none;
 }

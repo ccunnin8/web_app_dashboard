@@ -14,3 +14,17 @@
 .message {
 	margin-left: 5px;
 }
+.alert {
+	border: none;
+}
+.alertbox p {
+	padding: 5px;
+	font-size: .9em;
+	margin: 5px;
+	b {
+		font-size: 1.1rem;
+	}
+}
+.alert p:last-child {
+	font-size: 1.1rem;
+}

@@ -4,11 +4,13 @@
 /** NAMED COLOR VALUES ***/
 $grey-blue: #7c74d4;
 $darker-grey-blue: #5248ba;
+$super-light-grey: #f3f2f2;
 
 
 /*** FUNCTIONAL COLOR VALUES ***/
 $nav-bar: $grey-blue;
 $side-bar: $darker-grey-blue;
+$search-bar-color: $super-light-grey;
 
 /************************* SIZES *************************************/
 
@@ -52,6 +54,9 @@ $social-stats-tablet-width: 30%;
 
 //**heights****/
 $graph-tablet-height: 250px;
+
+//***icon****//
+$icon-tablet: 30px;
 
 //*******DESKTOP**********/////
 $sidebar: 10%;

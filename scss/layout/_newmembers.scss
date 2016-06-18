@@ -8,7 +8,10 @@
 		height: 93px;
 	}
 }
-.member img {
+.member:last-child {
+	border: none;
+}
+.head {
 	height: 50px;
 	width: 50px;
 	border-radius: 50%;
@@ -26,10 +29,4 @@ i {
 }
 .time {
 	margin: 0;
-}
-.newmembers, .recent-activity {
-	@include tablet {
-		width: 49%;
-		font-size: 1rem;
-	}
 }

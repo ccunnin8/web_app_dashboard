@@ -3,7 +3,8 @@
  	margin: 0 auto;
  	@include desktop {
  		width: $main-content-desktop;
- 		margin: 0 auto;
+ 		margin: 0;
+ 		width: 100%;
  	}
  }
  .container {

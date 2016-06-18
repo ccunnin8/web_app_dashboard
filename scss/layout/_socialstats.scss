@@ -4,6 +4,7 @@
 	@include tablet {
 		flex-direction: row;
 		justify-content: space-around;
+		padding-bottom: 20px;
 	}
 }
 .facebook-stats,.twitter-stats,.googleplus-stats {
