@@ -35,6 +35,7 @@ nav svg {
 	}
 }
 li {
+	color: white;
 	@include tablet {
 		padding: $list-item-padding;
 		display: flex;

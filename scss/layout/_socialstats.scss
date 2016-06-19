@@ -9,22 +9,39 @@
 }
 .facebook-stats,.twitter-stats,.googleplus-stats {
 	width:100%;
-	border: 1px solid black;
+	border: 1px solid lightgray;
 	margin-top: 10px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	background-color: $social-stats-background;
 	@include tablet {
 		width: $social-stats-tablet-width;
 	}
 }
-.social-stats img {
+.social-stats svg {
 	height: $social-stats;
 	width: $social-stats;
+	fill: white;
 }
-.social-stats img, .headline {
+.social-stats .icon {
+	background: $svg-background;
+	border-radius: 50%;
+}
+.social-stats svg, .headline {
 	padding: $social-stats-padding;
 	@include tablet {
 		padding: $social-stats-padding-tablet;
 	}
+}
+.social-stats h3 {
+	font-size: .9em;
+	color: $nav-bar;
+}
+.social-stats h2 {
+	font-size: 2rem;
+	font-family: arial;
+	font-weight: lighter !important;
+	letter-spacing: 0.3rem;
+	color: grey;
 }

@@ -1,7 +1,8 @@
-input, textarea {
+form input, textarea {
 	width: 99%;
 	margin-bottom: 10px;
 	font-size: 2em;
+	background: $super-light-grey;
 }
 textarea {
 	height: 200px;
@@ -35,6 +36,7 @@ select {
 	background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) no-repeat right;
 	background-position-x: 97%;
 	margin-bottom: 10px;
+	background-color: $super-light-grey;
 }
 
 .settings button {
@@ -53,7 +55,6 @@ select {
 .message-user, .settings {
 	@include tablet {
 		width: 45%;
-		padding-bottom: 30px;
 	}
 }
 .settings {
@@ -62,4 +63,8 @@ select {
 		flex-direction: column;
 		justify-content: space-between;
 	}
+}
+section:last-child {
+	padding-bottom: 70px;
+	border-bottom: none;
 }

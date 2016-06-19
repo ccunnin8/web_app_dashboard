@@ -5,24 +5,27 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	color: white;
 	margin-bottom: $alert-box-bottom;
 }
 .x {
 	margin-right: 5px;
+	color: white;
 }
 .message {
 	margin-left: 5px;
 }
 .alert {
 	border: none;
+	color: white;
 }
 .alertbox p {
+	color: white;
 	padding: 5px;
 	font-size: .9em;
 	margin: 5px;
 	b {
 		font-size: 1.1rem;
+		color: white;
 	}
 }
 .alert p:last-child {
