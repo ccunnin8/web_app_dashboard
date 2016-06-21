@@ -33,8 +33,8 @@ ul {
       padding: 5px 0; } }
 
 nav svg {
-  height: 20px;
-  width: 20px; }
+  height: 30px;
+  width: 30px; }
   @media (min-width: 760px) {
     nav svg {
       height: 30px;
@@ -46,7 +46,7 @@ nav svg {
   @media (min-width: 760px) {
     .brand {
       margin-right: auto; } }
-  .brand span {
+  .brand span, .brand i {
     color: lightgrey; }
 
 li {
@@ -63,6 +63,10 @@ li {
   li:last-child {
     border-left: 1px solid black; } }
 
+nav li svg {
+  padding: 10px;
+  fill: lightgreen; }
+
 .sidebar {
   display: none;
   width: 0; }
@@ -78,6 +82,10 @@ li {
   width: 50px;
   height: 50px;
   padding: 20px; }
+
+.sidebar svg:not(:first-child) {
+  stroke: grey;
+  stroke-width: 1px; }
 
 .main {
   width: 95%;
@@ -368,6 +376,10 @@ footer {
     #traffic, #dailytraffic, #mobileusers {
       height: 400px !important; } }
 
+@media (min-width: 1090px) {
+  .graph {
+    padding: 20px; } }
+
 .graph-toggle {
   width: 90%;
   margin: 0 auto;
@@ -389,3 +401,6 @@ footer {
 .switch-ios.switch-toggle {
   background-color: white;
   box-shadow: none; }
+
+canvas {
+  margin: 0 auto; }

@@ -30,7 +30,7 @@ nav svg {
 		margin-right: auto;
 	}
 	color:white;
-	span {
+	span, i {
 		color: lightgrey;
 	}
 }
@@ -47,4 +47,8 @@ li {
 	@include tablet {
 		border-left: 1px solid black;
 	}
+}
+nav li svg {
+	padding: 10px;
+	fill: lightgreen;
 }

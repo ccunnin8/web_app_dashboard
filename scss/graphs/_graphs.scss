@@ -8,7 +8,11 @@
 		height: 400px !important;
 	}
 }
-
+.graph {
+	@include desktop {
+		padding: 20px;
+	}
+}
 .graph-toggle {
 	width: $graph-toggle-mobile;
 	margin: 0 auto;
@@ -31,4 +35,7 @@
 .switch-ios.switch-toggle {
 	background-color: white;
 	box-shadow: none;
+}
+canvas {
+	margin: 0 auto;
 }
