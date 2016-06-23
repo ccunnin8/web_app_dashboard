@@ -5,9 +5,10 @@
 		flex-direction: row;
 		justify-content: space-around;
 		padding-bottom: 20px;
+		flex-wrap: wrap;
 	}
 }
-.facebook-stats,.twitter-stats,.googleplus-stats {
+.facebook-stats,.twitter-stats,.googleplus-stats, .myspace-stats, .youtube-stats, .instagram-stats {
 	width:100%;
 	border: 1px solid lightgray;
 	margin-top: 10px;

@@ -1,6 +1,5 @@
 @charset "UTF-8";
 /***FONT ****/
-@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css");
 /** NAMED COLOR VALUES ***/
 /*** FUNCTIONAL COLOR VALUES ***/
 /************************* SIZES *************************************/
@@ -202,9 +201,10 @@ nav li svg {
     .social-stats {
       flex-direction: row;
       justify-content: space-around;
-      padding-bottom: 20px; } }
+      padding-bottom: 20px;
+      flex-wrap: wrap; } }
 
-.facebook-stats, .twitter-stats, .googleplus-stats {
+.facebook-stats, .twitter-stats, .googleplus-stats, .myspace-stats, .youtube-stats, .instagram-stats {
   width: 100%;
   border: 1px solid lightgray;
   margin-top: 10px;
@@ -213,7 +213,7 @@ nav li svg {
   justify-content: center;
   background-color: #f3f2f2; }
   @media (min-width: 760px) {
-    .facebook-stats, .twitter-stats, .googleplus-stats {
+    .facebook-stats, .twitter-stats, .googleplus-stats, .myspace-stats, .youtube-stats, .instagram-stats {
       width: 30%; } }
 
 .social-stats svg {
