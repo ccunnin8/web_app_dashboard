@@ -100,11 +100,13 @@ var mobileUsers = new Chart(pieChart,{
 	data: mobileUsersData,
 	options: {
 		cutoutPercentage: 50,
+		maintainAspectRatio: true,
 		legend: {
 			display: true,
 			position: "right",
+			fullWidth: false,
 			labels: {
-				fontSize: 24
+				fontSize: 8
 			}
 		},
 		responsive: true,

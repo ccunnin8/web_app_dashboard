@@ -18,4 +18,8 @@ section {
 }
 .two-column div:first-child {
 	border-right: 4px solid lightgray;
+	margin-right: auto;
+	@include desktop {
+		margin-right: 0;
+	}
 }

@@ -4,7 +4,7 @@
 	justify-content: center;
 }
 @mixin search-icon {
-	font-family: fontAwesome; content:'\f002  '; float: right;
+	font-family: fontAwesome; content:'\f002'; float: right;
 }
 @mixin search-bar {
 	&::-webkit-input-placeholder::before { @include search-icon }

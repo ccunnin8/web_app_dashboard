@@ -14,15 +14,17 @@
 	margin-top: 10px;
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-around;
 	background-color: $social-stats-background;
 	@include tablet {
 		width: $social-stats-tablet-width;
+		justify-content: center;
 	}
 }
 .social-stats svg {
 	height: $social-stats;
 	width: $social-stats;
+	padding: 20px;
 	fill: white;
 }
 .social-stats .icon {
@@ -30,7 +32,7 @@
 	border-radius: 50%;
 }
 .social-stats svg, .headline {
-	padding: $social-stats-padding;
+	// padding: $social-stats-padding;
 	@include tablet {
 		padding: $social-stats-padding-tablet;
 	}
@@ -43,6 +45,8 @@
 	font-size: 2rem;
 	font-family: arial;
 	font-weight: lighter !important;
-	letter-spacing: 0.3rem;
+	@include desktop {
+		letter-spacing: 0.3rem;
+	}
 	color: grey;
 }

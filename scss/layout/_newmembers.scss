@@ -30,3 +30,12 @@ i {
 .time {
 	margin: 0;
 }
+.email {
+	font-size: 0.5rem;
+	@include tablet {
+		font-size: 0.7rem;
+	}
+	@include desktop {
+		font-size: 1rem;
+	}
+}

@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /***FONT ****/
 /** NAMED COLOR VALUES ***/
 /*** FUNCTIONAL COLOR VALUES ***/
@@ -83,8 +82,10 @@ nav li svg {
   padding: 20px; }
 
 .sidebar svg:not(:first-child) {
-  stroke: grey;
-  stroke-width: 1px; }
+  stroke: grey; }
+
+body {
+  width: 100%; }
 
 .main {
   width: 95%;
@@ -105,19 +106,19 @@ nav li svg {
   display: block; }
   .searchbar::-webkit-input-placeholder::before {
     font-family: fontAwesome;
-    content: '\f002  ';
+    content: '\f002';
     float: right; }
   .searchbar::-moz-placeholder::before {
     font-family: fontAwesome;
-    content: '\f002  ';
+    content: '\f002';
     float: right; }
   .searchbar:-ms-input-placeholder::before {
     font-family: fontAwesome;
-    content: '\f002  ';
+    content: '\f002';
     float: right; }
   .searchbar input:-moz-placeholder::before {
     font-family: fontAwesome;
-    content: '\f002  ';
+    content: '\f002';
     float: right; }
   @media (min-width: 760px) {
     .searchbar {
@@ -150,7 +151,6 @@ nav li svg {
       margin-bottom: 25px; } }
 
 .search div {
-  padding-left: auto;
   padding-right: 15px;
   width: 85%;
   height: 100%;
@@ -210,26 +210,26 @@ nav li svg {
   margin-top: 10px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   background-color: #f3f2f2; }
   @media (min-width: 760px) {
     .facebook-stats, .twitter-stats, .googleplus-stats, .myspace-stats, .youtube-stats, .instagram-stats {
-      width: 30%; } }
+      width: 30%;
+      justify-content: center; } }
 
 .social-stats svg {
   height: 40px;
   width: 40px;
+  padding: 20px;
   fill: white; }
 
 .social-stats .icon {
   background: #7c74d4;
   border-radius: 50%; }
 
-.social-stats svg, .headline {
-  padding: 50px; }
-  @media (min-width: 760px) {
-    .social-stats svg, .headline {
-      padding: 15px; } }
+@media (min-width: 760px) {
+  .social-stats svg, .headline {
+    padding: 15px; } }
 
 .social-stats h3 {
   font-size: .9em;
@@ -239,8 +239,10 @@ nav li svg {
   font-size: 2rem;
   font-family: arial;
   font-weight: lighter !important;
-  letter-spacing: 0.3rem;
   color: grey; }
+  @media (min-width: 1090px) {
+    .social-stats h2 {
+      letter-spacing: 0.3rem; } }
 
 .member {
   display: flex;
@@ -273,6 +275,15 @@ i {
 
 .time {
   margin: 0; }
+
+.email {
+  font-size: 0.5rem; }
+  @media (min-width: 760px) {
+    .email {
+      font-size: 0.7rem; } }
+  @media (min-width: 1090px) {
+    .email {
+      font-size: 1rem; } }
 
 form input, textarea {
   width: 99%;
@@ -310,7 +321,7 @@ select {
   -webkit-appearance: none;
   -moz-apeearance: none;
   background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) no-repeat right;
-  background-position-x: 97%;
+  background-position: 97%;
   margin-bottom: 10px;
   background-color: #f3f2f2; }
 
@@ -360,7 +371,11 @@ footer {
     padding: 10px; } }
 
 .two-column div:first-child {
-  border-right: 4px solid lightgray; }
+  border-right: 4px solid lightgray;
+  margin-right: auto; }
+  @media (min-width: 1090px) {
+    .two-column div:first-child {
+      margin-right: 0; } }
 
 * {
   font-family: fontAwesome;
@@ -402,5 +417,11 @@ footer {
   background-color: white;
   box-shadow: none; }
 
-canvas {
-  margin: 0 auto; }
+#mobileusers {
+  width: 300px !important; }
+  @media (min-width: 760px) {
+    #mobileusers {
+      width: 350px !important; } }
+  @media (min-width: 1090px) {
+    #mobileusers {
+      width: 500px !important; } }

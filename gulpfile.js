@@ -18,6 +18,6 @@ gulp.task('default',function(){
 })
 
 gulp.task("minify",function(){
-	gulp.src("css/*.css").pipe(cleanCSS()).pipe(gulp.dest("dist/css"));
-	gulp.src("javascript/*.js").pipe(uglifyJS()).pipe(gulp.dest("dist/js"));
+	gulp.src("css/*.css").pipe(cleanCSS()).pipe(gulp.dest("dist/css/"));
+	gulp.src("javascript/*.js").pipe(uglifyJS()).pipe(gulp.dest("dist/js/"));
 })

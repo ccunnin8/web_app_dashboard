@@ -36,6 +36,15 @@
 	background-color: white;
 	box-shadow: none;
 }
-canvas {
-	margin: 0 auto;
+// canvas {
+// 	margin: 0 auto;
+// }
+#mobileusers {
+	width: 300px !important;
+	@include tablet {
+		width: 350px !important;
+	}
+	@include desktop {
+		width: 500px !important;
+	}
 }
